@@ -1,0 +1,61 @@
+html {
+  font-size: 62.5%;
+  //scroll-behavior: smooth;
+  &.remove {
+    overflow: hidden;
+    body {
+      overflow: hidden;
+    }
+  }
+  * {
+    .border-box();
+    outline: none;
+  }
+}
+
+body {
+  .font-regular();
+  font-size: 1.5rem;
+  /* max-width: 1920px; */
+  margin-left: auto;
+  margin-right: auto;
+  counter-reset: ol;
+
+  & > h1 {
+    position: absolute;
+    left: -10000px;
+  }
+
+  &.isie {
+  }
+}
+
+.screenReaderElement {
+  position: absolute;
+  left: -10000px;
+}
+
+.container {
+  .border-box();
+  .clearfix();
+  margin-left: auto;
+  margin-right: auto;
+  width: 1276px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.index {
+  display: block;
+  padding: 60px;
+  li {
+    .font-bold_sans();
+    list-style: none;
+    font-size: 2rem;
+  }
+}

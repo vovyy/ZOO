@@ -1,0 +1,116 @@
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="email"] {
+}
+textarea {
+}
+
+select {
+}
+
+button,
+input[type="submit"] {
+	border: none;
+	cursor: pointer;
+}
+
+form {
+	.clearfix();
+}
+
+input[type="checkbox"] {
+	display: none;
+	& + label {
+		&:before {
+			content: "";
+		}
+	}
+	&:checked + label {
+		&:before {
+		}
+	}
+}
+input[type="text"]::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type="text"]::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+/*.block-select {
+  position: relative;
+  cursor: pointer;
+  .active-item {
+    .font-regular_ibm();
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    border: none;
+    padding: 0px 16px;
+    //background-color: @gray5;
+    width: 100%;
+    font-size: 1.4rem;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 10px;
+  }
+  .menu {
+    .t(0.3s);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    background-color: @white;
+    z-index: 1;
+    /*-webkit-box-shadow: 0px 0px 47px -28px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 47px -28px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 47px -28px rgba(0, 0, 0, 0.75);*/
+/*padding: 0px;
+    //border: 1px solid @gray6;
+    max-height: 150px;
+    overflow: auto;
+    &.active {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      top: calc(100%);
+    }
+    .help {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+    a {
+      .t(0.3s);
+      .font-regular_ibm();
+      font-size: 1.4rem;
+      //color: @gray1;
+      display: inline-block;
+      padding: 10px 16px;
+      width: 100%;
+      &:hover {
+        //background-color: @red;
+        color: @white;
+      }
+    }
+  }
+  select {
+    display: none !important;
+  }
+}*/
