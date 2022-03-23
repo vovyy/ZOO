@@ -45,7 +45,9 @@ if ($searchValue !== null) :
         endwhile;
         wp_reset_query(); //resetuje nastavení query, kvůli správnému načítání stránky
     else :
-        echo "Nejsou žádné příspěvky";
+        echo "<p style='color:white;font-size:8rem;width:1300px;text-align:center;position:absolute;left:50%;transform:translateX(-50%);'>
+        Litujeme, ale váš text neodpovídá žádnému příspěvku. Zkuste to prosím ještě jednou a lépe... </p>";
+
     endif;
     die();
 else :
@@ -86,7 +88,9 @@ if ($categoriesValue !== null) :
         endwhile;
         wp_reset_query();
     else :
-        echo "Nejsou žádné příspěvky";
+        echo "<p style='color:white;font-size:8rem;width:1300px;text-align:center;position:absolute;left:50%;transform:translateX(-50%);'>
+        Litujeme, ale váš text neodpovídá žádnému příspěvku. Zkuste to prosím ještě jednou a lépe... </p>";
+
     endif;
     die();
 else :
@@ -127,7 +131,10 @@ if ($radValue !== null) :
         endwhile;
         wp_reset_query();
     else :
-        echo "Nejsou žádné příspěvky";
+
+        echo "<p style='color:white;font-size:8rem;width:1300px;text-align:center;position:absolute;left:50%;transform:translateX(-50%);'>
+        Litujeme, ale váš text neodpovídá žádnému příspěvku. Zkuste to prosím ještě jednou a lépe... </p>";
+
     endif;
     die();
 else :
@@ -159,7 +166,9 @@ if ($resetPosts) :
         endwhile;
         wp_reset_query();
     else :
-        echo "Nejsou žádné příspěvky";
+        echo "<p style='color:white;font-size:8rem;width:1300px;text-align:center;position:absolute;left:50%;transform:translateX(-50%);'>
+        Litujeme, ale váš text neodpovídá žádnému příspěvku. Zkuste to prosím ještě jednou a lépe... </p>";
+
     endif;
     die();
 else :

@@ -141,6 +141,7 @@ foreach ($record as $mainkey => $item) : //main key, klíč pole z foreach
             update_post_meta($checkPost, "id", $item->_id);
             update_post_meta($checkPost, "latin_title", $item->latin_title);
             update_post_meta($checkPost, "trida", $item->classes);
+            update_post_meta($checkPost, "vyhledavani", $item->title);
             update_post_meta($checkPost, "skupina", $item->order);
             update_post_meta($checkPost, "popisek", $item->description);
             update_post_meta($checkPost, "obrazek", $item->image_src);
@@ -176,6 +177,7 @@ foreach ($record as $mainkey => $item) : //main key, klíč pole z foreach
                 update_post_meta($new_post, "id", $item->_id);
                 update_post_meta($new_post, "latin_title", $item->latin_title);
                 update_post_meta($new_post, "trida", $item->classes);
+                update_post_meta($new_post, "vyhledavani", $item->title);
                 update_post_meta($new_post, "skupina", $item->order);
                 update_post_meta($new_post, "popisek", $item->description);
                 update_post_meta($new_post, "obrazek", $item->image_src);

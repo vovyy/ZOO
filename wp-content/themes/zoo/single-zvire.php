@@ -34,7 +34,7 @@ $IDpost = $id;
                             echo $text; ?>
                             <?php if (strlen($popis) > 221) : ?>
                                 <br>
-                                <a href="" data-target="#openmodal<?php echo $post->ID; ?>" class="more open-modal" style="text-decoration:underline;">Více zde</a>
+                                <a href="" data-target="#openmodal-popis<?php echo $post->ID; ?>" class="more open-modal" style="text-decoration:underline;">Více zde</a>
                             <?php endif; ?>
                         </p>
                     </div>
@@ -47,13 +47,16 @@ $IDpost = $id;
             </div>
 
         </section>
-        <div class="modal" id="openmodal<?php echo $post->ID; ?>">
-            <div class="exit"></div>
+        <div class="modal" id="openmodal-popis<?php echo $post->ID; ?>">
+            <div class="exit">
+                <div class="cross"></div>
+            </div>
             <div class="modal-container">
                 <p><?php echo $popis; ?></p>
             </div>
         </div>
         <div class="filter-back"></div>
+
         <section class="table_section">
             <div class="container">
                 <div class="flex-block">
@@ -109,9 +112,17 @@ $IDpost = $id;
                                 echo $text; ?>
                                 <?php if (strlen($chov) > 220) : ?>
                                     <br>
-                                    <a href="" data-target="#openmodal<?php echo $post->ID; ?>" class="more open-modal" style="text-decoration:underline;">Více zde</a>
+                                    <a href="" data-target="#openmodal-chov<?php echo $post->ID; ?>" class="more open-modal" style="text-decoration:underline;">Více zde</a>
                                 <?php endif; ?>
                             </p>
+                        </div>
+                        <div class="modal" id="openmodal-chov<?php echo $post->ID; ?>">
+                            <div class="exit">
+                                <div class="cross"></div>
+                            </div>
+                            <div class="modal-container">
+                                <p><?php echo $chov; ?></p>
+                            </div>
                         </div>
                         <div class="card">
                             <h2>Expozice</h2>

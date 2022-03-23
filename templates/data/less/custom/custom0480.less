@@ -1,13 +1,119 @@
 main {
-	.flex-block {
-		&.collection {
-			grid-template-columns: repeat(1, 1fr);
-		}
-		.under_cards_section {
-			.flex-block {
-				display: flex;
-				flex-wrap: wrap;
-			}
-		}
-	}
+  .flex-block {
+    &.collection {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .under_cards_section {
+      .flex-block {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+        .together {
+          .card {
+            h2 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.single {
+      .title {
+        .flex-block {
+          h1.animal_title {
+            font-size: 20px;
+          }
+        }
+      }
+      .table_section {
+        .flex-block {
+          overflow-x: scroll;
+          .table_animal {
+            th {
+              font-size: 1.5rem !important;
+            }
+            td {
+              font-size: 1.25rem !important;
+            }
+          }
+        }
+      }
+      .under_title {
+        .flex-block {
+          .left {
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.modal {
+  .t(0.3s);
+  position: fixed;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: @white;
+  width: 90%;
+  height: 60%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  .exit {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    .cross {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      &::before {
+        content: "\00d7";
+        display: inline-block;
+        position: absolute;
+        top: -44%;
+        font-size: 56px;
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-container {
+    padding: 20px;
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    p {
+      top: 0px;
+      transform: translateY(0);
+      position: relative;
+      font-size: 2rem;
+      overflow-y: scroll;
+    }
+  }
 }
