@@ -14,14 +14,12 @@ include("data-ajax.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZOO Praha</title>
     <!-- fonty -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' <!-- css -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- css -->
     <link href="<?php echo home_url(); ?>/templates/data/css/styles.css" rel="stylesheet" type="text/css">
     <link href="<?php echo home_url(); ?>/templates/data/css/fonts.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo home_url(); ?>/templates/data/css/swiper.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- js -->
     <script src="<?php echo home_url(); ?>/templates/data/js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="<?php echo home_url(); ?>/templates/data/js/swiper.min.js" type="text/javascript"></script>
     <script src="<?php echo home_url(); ?>/templates/data/js/scripts.js" type="text/javascript"></script>
     <?php wp_head(); ?>
 </head>
